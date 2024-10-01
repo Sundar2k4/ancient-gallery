@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Grid from './components/Grid';
 import Sidebar from './components/Sidebar';
 import ArtifactDetail from './components/ArtifactDetail'; // Import the new component
-import Homepage from './components/Homepage'; // Import the Homepage component
+import Homepage from './components/Mainpage'; // Import the Homepage component
 
 function App() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);

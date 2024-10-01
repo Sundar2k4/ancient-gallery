@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Login from './Login'; 
-import './Homepage.css'; // Optional: create this CSS file for styling
+import './Mainpage.css'; // Optional: create this CSS file for styling
 
-const Homepage = () => {
+const Mainpage = () => {
   const [showLogin, setShowLogin] = useState(false);
   const navigate = useNavigate(); // Use the navigate hook for routing
 
@@ -33,5 +33,5 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default Mainpage;
 
