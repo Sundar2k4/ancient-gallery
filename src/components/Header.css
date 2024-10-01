@@ -1,0 +1,58 @@
+/* Basic header styling */
+header {
+    background-color: whitesmoke;
+    border-bottom: 0.5px solid grey;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navigation bar styling */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    max-height: 20vh;
+}
+
+/* Search bar styling */
+.search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Heading within the search bar */
+.heading {
+    margin-left: 20px; /* Adjust margin as needed */
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em; /* Make sure the text is large enough */
+    font-weight: bold;
+    flex-grow: 1; /* Ensure it takes up available space */
+}
+
+/* Menu icon styling */
+.menu {
+    margin-left: auto;
+    padding: 5px;
+}
+
+/* SVG icon styling */
+.menu svg {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.menu svg:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Responsive design for small screens */
+@media screen and (max-width: 600px) {
+    .heading {
+        font-size: 1.5em; /* Reduce font size on smaller screens */
+    }
+}

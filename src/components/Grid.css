@@ -1,0 +1,80 @@
+.grid {
+    display: grid;
+    padding-top: 200px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.griditem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.gridimg {
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gridimg:hover {
+    transform: scale(1.2);
+}
+
+.details {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    background-color: white;
+}
+
+/* Use specific styles for each grid item */
+#griditem1 .gridimg {
+    background-image: url('../images/kingtut.jpg'); /* Path to the image in your src folder */
+}
+
+#griditem2 .gridimg {
+    background-image: url('../images/Terracotta-Army.jpg'); /* Path to the image in your src folder */
+}
+
+#griditem3 .gridimg {
+    background-image: url('../images/Blombos-Cave-Paint-Bowl.jpg'); /* Path to the image in your src folder */
+}
+
+#griditem4 .gridimg {
+    background-image: url('../images/Bone-Flute.jpg'); /* Path to the image in your src folder */
+}
+
+#griditem5 .gridimg {
+    background-image: url('../images/Skhul-Cave-Beads.jpg'); /* Path to the image in your src folder */
+}
+
+#griditem6 .gridimg {
+    background-image: url('../images/Lowenmensch-Figurine.jpg'); /* Path to the image in your src folder */
+}
+
+#griditem7 .gridimg {
+    background-image: url('../images/Rosetta.jpg'); /* Path to the image in your src folder */
+}
+
+#griditem8 .gridimg {
+    background-image: url('../images/venusofhohlefels.jpg'); /* Path to the image in your src folder */
+}
+
+#griditem9 .gridimg {
+    background-image: url('../images/Seal-of-Indus-Valley-Civilization.jpg'); /* Path to the image in your src folder */
+}
+
+@media screen and (max-width: 600px) {
+    #grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
