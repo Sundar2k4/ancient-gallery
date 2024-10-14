@@ -16,9 +16,9 @@ function App() {
   };
 
   // Function to handle login
-  const handleLogin = () => {
-    setIsLoggedIn(true);
-  };
+  //const handleLogin = () => {
+    //setIsLoggedIn(true);
+  //};
 
   // Function to handle logout
   const handleLogout = () => {
