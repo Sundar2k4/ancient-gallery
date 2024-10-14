@@ -40,7 +40,7 @@ function App() {
           handleLogout={handleLogout} 
         />
         <Routes>
-          <Route path='/' element={<Mainpage />} />
+          <Route path='/ancient-gallery' element={<Mainpage />} />
           <Route path="/grid" element={<Grid/>}/>
           <Route path="/artifact/:id" element={< ArtifactDetail/>} /> {/* New Route for Detail Page */}
         </Routes>

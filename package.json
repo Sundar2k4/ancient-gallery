@@ -1,6 +1,7 @@
 {
-  "homepage": "https://Sundar2k4.github.io/ancient-gallery",
+ 
   "name": "ancient-gallery",
+  "homepage": "https://Sundar2k4.github.io/ancient-gallery",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
