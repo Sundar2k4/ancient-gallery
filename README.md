@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Ancient Art Gallery - MERN Stack Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An **Ancient Art Gallery** website built using the MERN (MongoDB, Express, React, Node.js) stack. The website showcases a variety of ancient artifacts with detailed information fetched from a MongoDB database. Users can explore artifacts and learn about their historical significance through an intuitive user interface.
 
-## Available Scripts
+## Live Demo
 
-In the project directory, you can run:
+Check out the live demo of the Ancient Art Gallery here: [Ancient Art Gallery](https://sundar2k4.github.io/ancient-gallery/)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 📜 **Artifact Display**: View a gallery of ancient artifacts with images and descriptions.
+- 🔍 **Detailed Artifact Information**: Click on an artifact to access more detailed information about its history and origin.
+- 🖼️ **Appealing Interface**: The website features a clean and responsive design, optimized for a seamless user experience.
+- 💾 **MongoDB Integration**: All artifact data, including images and descriptions, is stored in a MongoDB database.
+- 🛠️ **MERN Stack**: Built using MongoDB, Express, React, and Node.js for a scalable web application.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- **Frontend**: React.js
+  - React components for creating the user interface.
+  - CSS for a responsive and visually appealing gallery layout.
+- **Backend**: Node.js, Express.js
+  - Server-side logic to serve the static files and handle routing.
+- **Database**: MongoDB
+  - NoSQL database for storing artifact information.
+  - Mongoose for schema-based data modeling and interaction with MongoDB.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Structure
 
-### `npm run build`
+`├── build ├── node_modules ├── public ├── server │ └── server.js # Express server setup ├── src │ ├── components │ │ ├── ArtifactDetail.css │ │ ├── ArtifactDetail.jsx │ │ ├── firebaseConfig.js │ │ ├── Grid.css │ │ ├── Grid.jsx │ │ ├── Header.css │ │ ├── Header.jsx │ │ ├── Login.css │ │ ├── Login.jsx │ │ ├── Mainpage.css │ │ ├── Mainpage.jsx │ │ ├── Sidebar.css │ │ ├── Sidebar.jsx │ ├── images │ ├── App.css │ ├── App.jsx │ ├── App.test.js │ ├── index.css │ ├── index.jsx │ ├── logo.svg │ ├── reportWebVitals.js │ ├── setupTests.js`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Node.js](https://nodejs.org/)
+- [MongoDB](https://www.mongodb.com/)
 
-### `npm run eject`
+### Setup Instructions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clone the repository:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/yourusername/ancient-art-gallery.git
+cd ancient-gallery
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Installation
 
-## Learn More
+```bash
+# Install dependencies:
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Run the backend server:
+cd server
+node server.js
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Run the frontend server:
+# Navigate back to the ancient-gallery root directory:
+cd ..
+npm start
+```

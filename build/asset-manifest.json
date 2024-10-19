@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ancient-gallery/static/css/main.75c0cc5a.css",
-    "main.js": "/ancient-gallery/static/js/main.05385b4c.js",
+    "main.js": "/ancient-gallery/static/js/main.f9937ee2.js",
     "static/media/Blombos-Cave-Paint-Bowl.jpg": "/ancient-gallery/static/media/Blombos-Cave-Paint-Bowl.5144246bda37934b2bad.jpg",
     "static/media/Seal-of-Indus-Valley-Civilization.jpg": "/ancient-gallery/static/media/Seal-of-Indus-Valley-Civilization.dc530ff736934a51ccd0.jpg",
     "static/media/Acheulean-Stone-Tools.jpg": "/ancient-gallery/static/media/Acheulean-Stone-Tools.fb12fb27e76a47adee70.jpg",
@@ -15,10 +15,10 @@
     "static/media/Lowenmensch-Figurine.jpg": "/ancient-gallery/static/media/Lowenmensch-Figurine.40ce48eaf50f60193c9f.jpg",
     "index.html": "/ancient-gallery/index.html",
     "main.75c0cc5a.css.map": "/ancient-gallery/static/css/main.75c0cc5a.css.map",
-    "main.05385b4c.js.map": "/ancient-gallery/static/js/main.05385b4c.js.map"
+    "main.f9937ee2.js.map": "/ancient-gallery/static/js/main.f9937ee2.js.map"
   },
   "entrypoints": [
     "static/css/main.75c0cc5a.css",
-    "static/js/main.05385b4c.js"
+    "static/js/main.f9937ee2.js"
   ]
 }
