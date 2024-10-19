@@ -1,66 +1,64 @@
 import React, { useState } from 'react';
-import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth'; // Import Firebase authentication methods
-import { auth } from './firebaseConfig'; // Import the Firebase config
-import './Login.css'; // Import your login styles
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css';
+import Header from './components/Header';
+import Grid from './components/Grid';
+import Sidebar from './components/Sidebar';
+import ArtifactDetail from './components/ArtifactDetail'; // Import the new component
+import Mainpage from './components/Mainpage'; // Import the Mainpage component
+import Login from './components/Login'; // Import the Login component
 
-const Login = ({ onClose, onLoginSuccess }) => {
-  const [email, setEmail] = useState(''); // Email state
-  const [password, setPassword] = useState(''); // Password state
-  const [error, setError] = useState(''); // Error state
+function App() {
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // Manage login state
+  const [showLogin, setShowLogin] = useState(false); // State to manage login modal
 
-  const handleLogin = async (e) => {
-    e.preventDefault();
-    
-    try {
-      // Try logging in with Firebase
-      await signInWithEmailAndPassword(auth, email, password);
-      alert('Logged in successfully');
-      onLoginSuccess(); // Call the onLoginSuccess callback after successful login
-    } catch (err) {
-      // If login fails, check if it's because the user does not exist
-      if (err.code === 'auth/user-not-found') {
-        // Register the new user
-        try {
-          await createUserWithEmailAndPassword(auth, email, password);
-          alert('User registered successfully');
-          onLoginSuccess(); // Call the onLoginSuccess callback after successful registration
-        } catch (registrationError) {
-          setError('Failed to register. Please try again.');
-        }
-      } else {
-        setError('Failed to login. Please check your credentials.');
-      }
-    }
+  const toggleSidebar = () => {
+    setSidebarOpen(!isSidebarOpen);
+  };
+
+  // Function to handle login success
+  const handleLoginSuccess = () => {
+    setIsLoggedIn(true);
+    setShowLogin(false); // Close the login modal on success
+  };
+
+  // Function to handle logout
+  const handleLogout = () => {
+    setIsLoggedIn(false);
   };
 
   return (
-    <div className="login-container">
-      <button className="close-button" onClick={onClose}>X</button> {/* Close button */}
-      <h2>Login</h2>
-      {error && <p className="error">{error}</p>}
-      <form onSubmit={handleLogin}>
-        <div>
-          <label>Email:</label>
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
+    <Router>
+      <div className="App">
+        <Header 
+          toggleSidebar={toggleSidebar} 
+          isLoggedIn={isLoggedIn} 
+          handleLogout={handleLogout} 
+          onLoginClick={() => setShowLogin(true)} // Open login modal
+        />
+        <Sidebar 
+          isOpen={isSidebarOpen} 
+          toggleSidebar={toggleSidebar} 
+          isLoggedIn={isLoggedIn} 
+          handleLogout={handleLogout} 
+        />
+        
+        {showLogin && (
+          <Login 
+            onClose={() => setShowLogin(false)} 
+            onLoginSuccess={handleLoginSuccess} 
           />
-        </div>
-        <div>
-          <label>Password:</label>
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </div>
-        <button type="submit">Login</button>
-      </form>
-    </div>
+        )}
+        
+        <Routes>
+          <Route path='/ancient-gallery' element={<Mainpage />} />
+          <Route path="/grid" element={<Grid />} />
+          <Route path="/artifact/:id" element={<ArtifactDetail />} /> {/* New Route for Detail Page */}
+        </Routes>
+      </div>
+    </Router>
   );
-};
+}
 
-export default Login;
+export default App;
