@@ -27,7 +27,7 @@ Check out the live demo of the Ancient Art Gallery here: [Ancient Art Gallery](h
 
 ## Project Structure
 
-├── build ├── node_modules ├── public ├── server │ └── server.js # Express server setup ├── src │ ├── components │ │ ├── ArtifactDetail.css │ │ ├── ArtifactDetail.jsx │ │ ├── firebaseConfig.js │ │ ├── Grid.css │ │ ├── Grid.jsx │ │ ├── Header.css │ │ ├── Header.jsx │ │ ├── Login.css │ │ ├── Login.jsx │ │ ├── Mainpage.css │ │ ├── Mainpage.jsx │ │ ├── Sidebar.css │ │ ├── Sidebar.jsx │ ├── images │ ├── App.css │ ├── App.jsx │ ├── App.test.js │ ├── index.css │ ├── index.jsx │ ├── logo.svg │ ├── reportWebVitals.js │ ├── setupTests.js
+ancient-gallery/ ├── build ├── node_modules ├── public ├── server │ └── server.js # Express server setup ├── src │ ├── components │ │ ├── ArtifactDetail.css │ │ ├── ArtifactDetail.jsx │ │ ├── firebaseConfig.js │ │ ├── Grid.css │ │ ├── Grid.jsx │ │ ├── Header.css │ │ ├── Header.jsx │ │ ├── Login.css │ │ ├── Login.jsx │ │ ├── Mainpage.css │ │ ├── Mainpage.jsx │ │ ├── Sidebar.css │ │ ├── Sidebar.jsx │ ├── images │ ├── App.css │ ├── App.jsx │ ├── App.test.js │ ├── index.css │ ├── index.jsx │ ├── logo.svg │ ├── reportWebVitals.js │ └── setupTests.js
 
 ## Installation
 
