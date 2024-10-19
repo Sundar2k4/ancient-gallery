@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/ancient-gallery/static/css/main.75c0cc5a.css",
+    "main.js": "/ancient-gallery/static/js/main.3f425d12.js",
+    "static/media/Blombos-Cave-Paint-Bowl.jpg": "/ancient-gallery/static/media/Blombos-Cave-Paint-Bowl.5144246bda37934b2bad.jpg",
+    "static/media/Seal-of-Indus-Valley-Civilization.jpg": "/ancient-gallery/static/media/Seal-of-Indus-Valley-Civilization.dc530ff736934a51ccd0.jpg",
+    "static/media/Acheulean-Stone-Tools.jpg": "/ancient-gallery/static/media/Acheulean-Stone-Tools.fb12fb27e76a47adee70.jpg",
+    "static/media/kingtut.jpg": "/ancient-gallery/static/media/kingtut.4286bb09ed638b87aa76.jpg",
+    "static/media/Terracotta-Army.jpg": "/ancient-gallery/static/media/Terracotta-Army.661585b7bfb573ec0adf.jpg",
+    "static/media/venusofhohlefels.jpg": "/ancient-gallery/static/media/venusofhohlefels.2ffcc2e0d5a4c8cc8d13.jpg",
+    "static/media/Rosetta.jpg": "/ancient-gallery/static/media/Rosetta.ec10f2d27a23faef6424.jpg",
+    "static/media/imag.jpg": "/ancient-gallery/static/media/imag.96beb7b37ad01bc3c2cf.jpg",
+    "static/media/Skhul-Cave-Beads.jpg": "/ancient-gallery/static/media/Skhul-Cave-Beads.f4a275579ecb85d8d202.jpg",
+    "static/media/Bone-Flute.jpg": "/ancient-gallery/static/media/Bone-Flute.c3ba13c88dca516b6141.jpg",
+    "static/media/Lowenmensch-Figurine.jpg": "/ancient-gallery/static/media/Lowenmensch-Figurine.40ce48eaf50f60193c9f.jpg",
+    "index.html": "/ancient-gallery/index.html",
+    "main.75c0cc5a.css.map": "/ancient-gallery/static/css/main.75c0cc5a.css.map",
+    "main.3f425d12.js.map": "/ancient-gallery/static/js/main.3f425d12.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75c0cc5a.css",
+    "static/js/main.3f425d12.js"
+  ]
+}
