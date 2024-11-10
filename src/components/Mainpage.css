@@ -1,108 +1,16 @@
-/* General homepage styles */
+
 .homepage {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    align-items: center;
-    justify-content: center;
-    height: 150vh;
-    text-align: center;
-    font-family: Arial, sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff; 
+}
+
+
+  .body
+  {
+    background-image: "images/bgimage.jpg";
   }
-  
-  
-  
-  h1 {
-    font-size: 3rem;
-    color: #333; /* Dark gray text color */
-    margin-bottom: 20px;
-    height: 90vh;
-    background-image: "images/kingtut.jpg";
-  }
-  
-  .login-button {
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    color: black;
-    background-color: #007bff; /* Blue color for the button */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .login-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-  }
-  
-  .login-container {
-    background:yellow;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-    padding: 20px;
-    max-width: 400px;
-    margin: 20px auto;
-    text-align: left;
-  }
-  
-  .close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: #f44336; /* Red background for close button */
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 1.5rem;
-  }
-  
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333; /* Dark gray text color */
-  }
-  
-  form div {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  button[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    font-size: 1.2rem;
-    color: #fff;
-    background-color: #28a745; /* Green color for submit button */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #218838; /* Darker green on hover */
-  }
-  
-  .error {
-    color: #f44336; /* Red color for error messages */
-    margin-bottom: 15px;
-  }
- 
