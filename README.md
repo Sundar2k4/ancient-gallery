@@ -29,6 +29,7 @@ Check out the live demo of the Ancient Art Gallery here: [Ancient Art Gallery](h
 
 ## Project Directory Structure
 
+```
 project-root/
 ├── build
 ├── node_modules
@@ -54,6 +55,7 @@ project-root/
 │ ├── logo.svg
 │ ├── reportWebVitals.js
 │ └── setupTests.js
+```
 
 ## Installation
 
