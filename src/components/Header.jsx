@@ -18,7 +18,7 @@ const Header = () => {
           <div style={{ color: 'black' }}>
             <h1>GALLERY OF TIME</h1>
           </div>
-          <button onClick={handleNavigate}>Add More</button>
+          <button  onClick={handleNavigate}>Add Artifacts</button>
         </div>
       </nav>
     </header>

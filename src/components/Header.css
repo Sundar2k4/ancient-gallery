@@ -58,12 +58,15 @@ header {
 
 button{
     margin-left: 170vh;
+    width: 200vh;
+    font-size: 2vh;
     background-color: green;
     color: white;
     margin-bottom: 2vh;
 
     &:hover{
-        background-color: yellow;
+        background-color: orange;
         color: black;
+        border: 2px solid black;
     }
 }
