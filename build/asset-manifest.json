@@ -1,11 +1,9 @@
 {
   "files": {
-    "main.css": "/ancient-gallery/static/css/main.122b17b5.css",
-    "main.js": "/ancient-gallery/static/js/main.46b792c0.js",
-    "static/media/Cigimage.jpg": "/ancient-gallery/static/media/Cigimage.806f59e4cad4bc77fe07.jpg",
+    "main.css": "/ancient-gallery/static/css/main.75b7ba92.css",
+    "main.js": "/ancient-gallery/static/js/main.cb3a6517.js",
     "static/media/Blombos-Cave-Paint-Bowl.jpg": "/ancient-gallery/static/media/Blombos-Cave-Paint-Bowl.5144246bda37934b2bad.jpg",
     "static/media/Seal-of-Indus-Valley-Civilization.jpg": "/ancient-gallery/static/media/Seal-of-Indus-Valley-Civilization.dc530ff736934a51ccd0.jpg",
-    "static/media/Acheulean-Stone-Tools.jpg": "/ancient-gallery/static/media/Acheulean-Stone-Tools.fb12fb27e76a47adee70.jpg",
     "static/media/kingtut.jpg": "/ancient-gallery/static/media/kingtut.4286bb09ed638b87aa76.jpg",
     "static/media/Terracotta-Army.jpg": "/ancient-gallery/static/media/Terracotta-Army.661585b7bfb573ec0adf.jpg",
     "static/media/venusofhohlefels.jpg": "/ancient-gallery/static/media/venusofhohlefels.2ffcc2e0d5a4c8cc8d13.jpg",
@@ -15,11 +13,11 @@
     "static/media/Bone-Flute.jpg": "/ancient-gallery/static/media/Bone-Flute.c3ba13c88dca516b6141.jpg",
     "static/media/Lowenmensch-Figurine.jpg": "/ancient-gallery/static/media/Lowenmensch-Figurine.40ce48eaf50f60193c9f.jpg",
     "index.html": "/ancient-gallery/index.html",
-    "main.122b17b5.css.map": "/ancient-gallery/static/css/main.122b17b5.css.map",
-    "main.46b792c0.js.map": "/ancient-gallery/static/js/main.46b792c0.js.map"
+    "main.75b7ba92.css.map": "/ancient-gallery/static/css/main.75b7ba92.css.map",
+    "main.cb3a6517.js.map": "/ancient-gallery/static/js/main.cb3a6517.js.map"
   },
   "entrypoints": [
-    "static/css/main.122b17b5.css",
-    "static/js/main.46b792c0.js"
+    "static/css/main.75b7ba92.css",
+    "static/js/main.cb3a6517.js"
   ]
 }

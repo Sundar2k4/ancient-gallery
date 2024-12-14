@@ -1,6 +1,6 @@
 # Ancient Art Gallery - MERN Stack Project
 
-An **Ancient Art Gallery** website built using the MERN (MongoDB, Express, React, Node.js) stack. The website showcases a variety of ancient artifacts with detailed information fetched from a MongoDB database. Users can explore artifacts and learn about their historical significance through an intuitive user interface.
+An **Ancient Art Gallery** website built using the MERN (MongoDB, Express, React, Node.js) stack. The website showcases a variety of ancient artifacts with detailed information fetched from a MongoDB database. Users can explore artifacts, add their own, and learn about their historical significance through an intuitive user interface.
 
 ## Live Demo
 
@@ -10,6 +10,7 @@ Check out the live demo of the Ancient Art Gallery here: [Ancient Art Gallery](h
 
 - 📜 **Artifact Display**: View a gallery of ancient artifacts with images and descriptions.
 - 🔍 **Detailed Artifact Information**: Click on an artifact to access more detailed information about its history and origin.
+- ➕ **Add New Artifacts**: Users can now add their own artifacts through a simple form interface.
 - 🖼️ **Appealing Interface**: The website features a clean and responsive design, optimized for a seamless user experience.
 - 💾 **MongoDB Integration**: All artifact data, including images and descriptions, is stored in a MongoDB database.
 - 🛠️ **MERN Stack**: Built using MongoDB, Express, React, and Node.js for a scalable web application.
@@ -25,38 +26,6 @@ Check out the live demo of the Ancient Art Gallery here: [Ancient Art Gallery](h
   - NoSQL database for storing artifact information.
   - Mongoose for schema-based data modeling and interaction with MongoDB.
 
-## Project Structure
-
-## Project Directory Structure
-
-```
-project-root/
-├── build
-├── node_modules
-├── public
-├── server
-│ └── server.js # Express server setup
-├── src
-│ ├── components
-│ │ ├── ArtifactDetail.css
-│ │ ├── ArtifactDetail.jsx
-│ │ ├── Grid.css
-│ │ ├── Grid.jsx
-│ │ ├── Header.css
-│ │ ├── Header.jsx
-│ │ ├── Mainpage.css
-│ │ ├── Mainpage.jsx
-│ ├── images
-│ ├── App.css
-│ ├── App.jsx
-│ ├── App.test.js
-│ ├── index.css
-│ ├── index.jsx
-│ ├── logo.svg
-│ ├── reportWebVitals.js
-│ └── setupTests.js
-```
-
 ## Installation
 
 ### Prerequisites
@@ -68,11 +37,10 @@ project-root/
 
 1. **Clone the repository:**
 
-```bash
+````bash
 git clone https://github.com/yourusername/ancient-art-gallery.git
 cd ancient-gallery
 
-```
 
 ## Installation
 
@@ -88,4 +56,4 @@ node server.js
 # Navigate back to the ancient-gallery root directory:
 cd ..
 npm start
-```
+````
