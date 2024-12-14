@@ -54,3 +54,16 @@ header {
         font-size: 1.5em; 
     }
 }
+
+
+button{
+    margin-left: 170vh;
+    background-color: green;
+    color: white;
+    margin-bottom: 2vh;
+
+    &:hover{
+        background-color: yellow;
+        color: black;
+    }
+}

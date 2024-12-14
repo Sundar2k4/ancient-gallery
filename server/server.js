@@ -50,15 +50,26 @@ app.get('/api/artifacts/:id', async (req, res) => {
 // API to create a new artifact
 app.post('/api/artifacts', async (req, res) => {
   try {
+    // Destructure request body
     const { _id, name, description, imageUrl, period, origin } = req.body;
+
+    // Validate required fields
+    if (!_id || !name || !description || !imageUrl || !period || !origin) {
+      return res.status(400).json({ error: "All fields are required." });
+    }
+
+    // Create and save the new artifact
     const newArtifact = new Artifact({ _id, name, description, imageUrl, period, origin });
     await newArtifact.save();
+
+    // Send success response
     res.status(201).json(newArtifact);
   } catch (error) {
-    res.status(500).send('Error creating artifact');
+    console.error("Error creating artifact:", error);
+    res.status(500).json({ error: "Error creating artifact." });
   }
 });
 
 // Start the server
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
