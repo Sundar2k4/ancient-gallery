@@ -6,17 +6,16 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Connect to MongoDB
-mongoose.connect('mongodb://127.0.0.1:27017/artGallery', {
+
+mongoose.connect('mongodb+srv://csundar993:S1RjXYDtC73UGJCE@cluster2.3g8fa.mongodb.net/?retryWrites=true&w=majority&appName=Cluster2', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
 .then(() => console.log('Connected to MongoDB'))
 .catch(err => console.error('Could not connect to MongoDB', err));
 
-// Define Artifact schema with custom string ID
 const artifactSchema = new mongoose.Schema({
-  _id: String, // Custom string ID
+  _id: String,
   name: String,
   description: String,
   imageUrl: String,
@@ -26,7 +25,7 @@ const artifactSchema = new mongoose.Schema({
 
 const Artifact = mongoose.model('Artifact', artifactSchema);
 
-// API to get all artifacts
+
 app.get('/api/artifacts', async (req, res) => {
   try {
     const artifacts = await Artifact.find();
@@ -36,7 +35,7 @@ app.get('/api/artifacts', async (req, res) => {
   }
 });
 
-// API to get a single artifact by ID
+
 app.get('/api/artifacts/:id', async (req, res) => {
   try {
     const artifact = await Artifact.findById(req.params.id);
@@ -47,22 +46,21 @@ app.get('/api/artifacts/:id', async (req, res) => {
   }
 });
 
-// API to create a new artifact
+
 app.post('/api/artifacts', async (req, res) => {
   try {
-    // Destructure request body
+
     const { _id, name, description, imageUrl, period, origin } = req.body;
 
-    // Validate required fields
+    
     if (!_id || !name || !description || !imageUrl || !period || !origin) {
       return res.status(400).json({ error: "All fields are required." });
     }
 
-    // Create and save the new artifact
+
     const newArtifact = new Artifact({ _id, name, description, imageUrl, period, origin });
     await newArtifact.save();
 
-    // Send success response
     res.status(201).json(newArtifact);
   } catch (error) {
     console.error("Error creating artifact:", error);
@@ -70,6 +68,5 @@ app.post('/api/artifacts', async (req, res) => {
   }
 });
 
-// Start the server
 const PORT = 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

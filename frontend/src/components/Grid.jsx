@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import './Grid.css';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import "./Grid.css";
 
 const Grid = () => {
   // State to store artifacts
   const [artifacts, setArtifacts] = useState([]);
-  
+
   // State for loading and error handling
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -19,17 +19,17 @@ const Grid = () => {
   const fetchArtifacts = async () => {
     try {
       setIsLoading(true);
-      const response = await fetch('http://localhost:5000/api/artifacts');
-      
+      const response = await fetch("http://localhost:5000/api/artifacts");
+
       if (!response.ok) {
-        throw new Error('Failed to fetch artifacts');
+        throw new Error("Failed to fetch artifacts");
       }
-      
+
       const data = await response.json();
       setArtifacts(data);
       setIsLoading(false);
     } catch (err) {
-      console.error('Error fetching artifacts:', err);
+      console.error("Error fetching artifacts:", err);
       setError(err.message);
       setIsLoading(false);
     }
@@ -59,7 +59,7 @@ const Grid = () => {
     return (
       <div className="empty-state">
         <p>No artifacts found. Add some artifacts to display!</p>
-        <Link to="/add-artifact" className="add-artifact-btn">
+        <Link to="/addart" className="add-artifact-btn">
           Add Artifact
         </Link>
       </div>
@@ -68,18 +68,20 @@ const Grid = () => {
 
   return (
     <div id="grid" className="grid">
-      {artifacts.map(artifact => (
-        <Link 
-          to={`/artifact/${artifact._id}`} 
-          key={artifact._id} 
+      {artifacts.map((artifact) => (
+        <Link
+          to={`/artifact/${artifact._id}`}
+          key={artifact._id}
           className="griditem"
         >
-          <div 
-            className="gridimg" 
-            style={{ 
-              backgroundImage: `url(${artifact.imageUrl || 'default-artifact.jpg'})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center'
+          <div
+            className="gridimg"
+            style={{
+              backgroundImage: `url(${
+                artifact.imageUrl || "default-artifact.jpg"
+              })`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
             }}
           ></div>
           <div className="details">
