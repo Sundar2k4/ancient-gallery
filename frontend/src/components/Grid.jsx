@@ -3,23 +3,18 @@ import { Link } from "react-router-dom";
 import "./Grid.css";
 
 const Grid = () => {
-  // State to store artifacts
   const [artifacts, setArtifacts] = useState([]);
-
-  // State for loading and error handling
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Fetch artifacts when component mounts
   useEffect(() => {
     fetchArtifacts();
   }, []);
 
-  // Function to fetch artifacts from backend
   const fetchArtifacts = async () => {
     try {
       setIsLoading(true);
-      const response = await fetch("http://localhost:5000/api/artifacts");
+      const response = await fetch("https://ancient-gallery-backend.onrender.com/api/artifacts");
 
       if (!response.ok) {
         throw new Error("Failed to fetch artifacts");
@@ -35,7 +30,6 @@ const Grid = () => {
     }
   };
 
-  // Render loading state
   if (isLoading) {
     return (
       <div className="loading">
@@ -44,7 +38,6 @@ const Grid = () => {
     );
   }
 
-  // Render error state
   if (error) {
     return (
       <div className="error">
@@ -54,7 +47,6 @@ const Grid = () => {
     );
   }
 
-  // Render empty state
   if (artifacts.length === 0) {
     return (
       <div className="empty-state">

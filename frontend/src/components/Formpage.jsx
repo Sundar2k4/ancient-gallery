@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import './formpage.css'
+import "./formpage.css";
+
 const Formpage = () => {
   const [formData, setFormData] = useState({
     _id: "",
@@ -18,13 +19,16 @@ const Formpage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:5000/api/artifacts", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://ancient-gallery-backend.onrender.com/api/artifacts",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (response.ok) {
         const result = await response.json();
@@ -49,7 +53,9 @@ const Formpage = () => {
 
   return (
     <div style={{ maxWidth: "500px", margin: "0 auto" }}>
-      <h2 style={{color:'black',marginBottom:'20px'}}>Add a New Artifact</h2>
+      <h2 style={{ color: "black", marginBottom: "20px" }}>
+        Add a New Artifact
+      </h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label>
@@ -122,8 +128,8 @@ const Formpage = () => {
             />
           </label>
           <div className="butto">
-          <button type="submit">Submit</button>
-        </div>
+            <button type="submit">Submit</button>
+          </div>
         </div>
       </form>
     </div>
